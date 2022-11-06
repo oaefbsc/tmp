@@ -111,15 +111,14 @@ The IQA partition has been very useful in the investigation of a wide diversity 
 
 # High Performance and Expresiveness
 
-In a short period of time the programming language [@bezanson2012] has positioned itself as one of the most promising programming languages for scientific and high-performance computing. Among its most innovative features we can highlight: ease of use as a dynamic language with powerful features that make it very productive for writing code, and at the same time, the developed code runs fast, at least as fast as code written in statically typed [@sengupta2019]. 
+In a short period of time the programming language [@bezanson2012] has positioned itself as one of the most promising programming languages for scientific and high-performance computing. Among its most innovative features we can highlight: ease of use as a dynamic language with powerful features that make it very productive for writing code, and at the same time, the developed code runs fast, at least as fast as code written in statically typed [@sengupta2019].  The use of this programming language in the area of numerical computation has increased in recent years as well as various applications exploiting parallel computation [@huo2020, @suslov2020, @huo2021] and has been tested in high-performance architectures [@hunold2020].
 
+
+We herein report a software which performs both tasks and that afterwards can be expanded for the computation of the integrals in formulae (\ref{cinetica})--(\ref{e_e})
 Such enhacement comprises the main contribution of this paper.
 
-# High Performance and Expresiveness
+# References
 
-**Ataque a la problematica**.
 
-We herein report a software which performs both tasks and that afterwards can be expanded for thecomputation of the integrals in formulae (\ref{cinetica})--(\ref{e_e})
-Such enhacement comprises the main contribution of this paper.
 
 
