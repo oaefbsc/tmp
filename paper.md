@@ -111,8 +111,7 @@ The IQA partition has been very useful in the investigation of a wide diversity 
 
 # High Performance and Expresiveness
 
-In a short period of time the programming language Julia~\cite{bezanson2012} has positioned itself as one of the most promising programming languages for scientific and high-performance computing. Among its most innovative features we can highlight: ease of use as a dynamic language with powerful features that make it very productive for writing code, and at the same time, the developed code runs fast, at least as fast as code written in statically typed languages~\cite{sengupta2019}. The use of this programming language in the area of numerical computation has increased in recent years, where we can identify linear algebra~\cite{olver2014}, computational geometry~\cite{bohm2016}, optimisation~\cite{udell2014}, linear programming, CFD~\cite{oz2021}, differential equations~\cite{chris2017}, economics~\cite{caraiani2019}, as well as various applications exploiting parallel computation~\cite{huo2021, suslov2020, huo2020} and high-performance architectures~\cite{hunold2020}.
-
+In a short period of time the programming language [@bezanson2012] has positioned itself as one of the most promising programming languages for scientific and high-performance computing. Among its most innovative features we can highlight: ease of use as a dynamic language with powerful features that make it very productive for writing code, and at the same time, the developed code runs fast, at least as fast as code written in statically typed [@sengupta2019]. 
 
 Such enhacement comprises the main contribution of this paper.
 
