@@ -83,14 +83,14 @@ r_1} \omega_{\Omega_{\mathrm{A}}}(r_1) \nabla_1^2
 \label{cinetica} \\[1em]
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
 Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(r_1)
-\frac{\rho(\r_1)}{r_{1\mathrm{B}}} \mathrm{d} r_1,
+\frac{\rho(r_1)}{r_{1\mathrm{B}}} \mathrm{d} r_1,
 \label{e_nucleo}  \\[1em]
 V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 \frac{2 - \delta_{\mathrm{AB}}}{2}
 \int \omega_{\Omega_{\mathrm{A}}}(r_1)
  \omega_{\Omega_{\mathrm{B}}}(r_2)
-\frac{\rho_2(r_1,r_2)}{r_{12}} \mathrm{d}\r_1
-\mathrm{d}\r_2, \ \mathrm{and} \label{e_e}  \\[1em]
+\frac{\rho_2(r_1,r_2)}{r_{12}} \mathrm{d}r_1
+\mathrm{d}r_2, \ \mathrm{and} \label{e_e}  \\[1em]
 \omega_{\Omega_\mathrm{A}}(r) & = \left\{
 \begin{array}{l}
 1 \ \mbox{if} \ r \in \Omega_\mathrm{A}. \\
@@ -101,7 +101,7 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 
 \noindent The function $\rho_1(r_1;r_1^{\prime})$ is the first-order reduced density matrix and $\delta_{\mathrm{AB}}$ is the Kronecker delta. The terms in equations (\ref{e_neta}) and (\ref{e_inter}) are easily interpretable. The quantity $T^{\Omega_{\mathrm{A}}}$ is the kinetic energy due to basin $\Omega_{\mathrm{A}}$ and $V_{\mathrm{e\tau}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}$ is the contribution to the potential energy due to (i) the electrons in basin $\Omega_{\mathrm{A}}$ and (ii) $\tau$, either electrons $\tau =\mathrm{e}$ or the nucleus $\tau = \mathrm{n}$, in basin $\Omega_{\mathrm{B}}$. Indeed, the Coulombic nature of the electronic Hamiltonian and theQTAIM partition, allows the electronic energy to be divided as put forward in equation (\ref{div_iqa}). 
 
-
+The IQA partition has been very useful in the investigation of a wide diversity of interactions in chemistry, e.g., covalent, polar, ionic, intermolecular interactions as well as chemical bonding in solid state systems$\color{blue}^{\mathrm{REFS}}\color{black}$. Despite the recognised utility of the IQA analysis, formulae (\ref{cinetica})--(\ref{omega}) imply that the IQA approach requires the integration of scalar fields over very irregular volume shapes. In particular expression (\ref{e_e}) entails the six-dimensional integral over two QTAIM-basins. This endeavour is far from straightforward and it involves a computational effort which severely hampers the applicability of IQA for the study of electronic systems. Currently, the IQA can only be applied to systems with only a few tens of atoms. Indeed, the main bottleneck for the explotaition of the IQA approach is the calculation of the above mentioned integrals. Ataque a la problematica. Therefore new algorithms and software is needed for the amelioration of this situation. Such enhacement comprises the main contribution of this paper. Julia. More specifically, one must determine the QTAIM-basins prior toperform the integrals involved in equations(\ref{cinetica})--(\ref{e_e}). One way to do it is via thedetermination of the IAS of the whole system. For this purpose, onemust first find all the critical points of $\varrho(\bm{r})$ andseconddetermine the stable manifolds of the BCP of the molecule or molecularcritical under investigation. \color{blue} We herein report a softwarewhich performs both tasks and that afterwards can be expanded for thecomputation of the integrals in formulae (\ref{cinetica})--(\ref{e_e})
 
 
 
