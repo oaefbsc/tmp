@@ -64,7 +64,6 @@ T^{\Omega_{\mathrm{A}}} +
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{A}}} +
 V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{A}}}
 \label{e_neta} \\
-
 E_{\mathrm{int}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 \frac{Z_{\mathrm{A}}Z_{\mathrm{B}}}{r_{\mathrm{AB}}} +
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} +
@@ -81,7 +80,6 @@ T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{\mathbf{r}_{1}^{\, \prime} =
 \mathbf{r}_{1}} \omega_{\Omega_{\mathrm{A}}}(\mathbf{r}_{1}) \nabla_1^2
 \varrho_{1}(\mathbf{r}_{1}; \mathbf{r}_{1}^{\, \prime}) \mathrm{d}\mathbf{r}_1,
 \label{cinetica} \\[1em]
-
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
 Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(\mathbf{r}_{1})
 \frac{\varrho(\mathbf{r}_{1})}{\mathbf{r}_{1}\mathrm{B}} \mathrm{d}\mathbf{r}_{1},
@@ -96,7 +94,6 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 \frac{\varrho_2(\mathbf{r}_{1}, \mathbf{r}_{2})}{r_{12}} \mathrm{d} \mathbf{r}_{1}
 \mathrm{d}\mathbf{r}_{2}, \ \mathrm{and} 
 \label{e_e}  \\[1em]
-
 \omega_{\Omega_\mathrm{A}}(r) & = \left\{
 \begin{array}{l}
 1 \ \mbox{if} \ \mathbf{r} \in \Omega_\mathrm{A}. \\
