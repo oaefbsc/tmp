@@ -28,7 +28,6 @@ affiliations:
  - name: Instituto de Química, Universidad Nacional Autónoma de México, Circuito Exterior, C. U., Coyoacán, 04510, Ciudad de México, México.
    index: 2
 date: 5 November 2022
-bibliography: paper.bib
 ---
 
 # Summary
