@@ -1,4 +1,3 @@
-﻿
 ---
 title: 'SoftwareName: A Julia package for Interacting Quantum Atoms'
 tags:
@@ -28,6 +27,8 @@ affiliations:
  - name: Instituto de Química, Universidad Nacional Autónoma de México, Circuito Exterior, C. U., Coyoacán, 04510, Ciudad de México, México.
    index: 2
 date: 5 November 2022
+bibliography: paper.bib
+
 ---
 
 # Summary
@@ -36,7 +37,7 @@ date: 5 November 2022
 [^1]: https://julialang.org
 [^2]: https://github.com/JuliaGPU/CUDA.jl
 
-# Quantum Chemical Topology
+# Statement of Need
 
 Chemical bonding is one of the most fundamental concepts in chemistry.
 The most sound way to examine different sorts of chemical
@@ -83,7 +84,7 @@ T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{\mathbf{r}_{1}^{\, \prime} =
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
 Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(\mathbf{r}_{1})
 \frac{\varrho(\mathbf{r}_{1})}{\mathbf{r}_{1}\mathrm{B}} \mathrm{d}\mathbf{r}_{1},
-\label{e_nucleo}  [1em]
+\label{e_nucleo}
 \end{align}
 
 \begin{align}
@@ -105,4 +106,21 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 
 \noindent The function $\varrho_1(\mathbf{r}_{1};\mathbf{r}_{1}^{\prime})$ is the first-order reduced density matrix and $\delta_{\mathrm{AB}}$ is the Kronecker delta. The terms in equations (\ref{e_neta}) and (\ref{e_inter}) are easily interpretable. The quantity $T^{\Omega_{\mathrm{A}}}$ is the kinetic energy due to basin $\Omega_{\mathrm{A}}$ and $V_{\mathrm{e\tau}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}$ is the contribution to the potential energy due to (i) the electrons in basin $\Omega_{\mathrm{A}}$ and (ii) $\tau$, either electrons $\tau =\mathrm{e}$ or the nucleus $\tau = \mathrm{n}$, in basin $\Omega_{\mathrm{B}}$. Indeed, the Coulombic nature of the electronic Hamiltonian and the QTAIM partition, allows the electronic energy to be divided as put forward in equation (\ref{div_iqa}). 
 
-The IQA partition has been very useful in the investigation of a wide diversity of interactions in chemistry, e.g., covalent, polar, ionic, intermolecular interactions as well as chemical bonding in solid state systems. Despite the recognised utility of the IQA analysis, formulae (\ref{cinetica})--(\ref{omega}) imply that the IQA approach requires the integration of scalar fields over very irregular volume shapes. In particular expression (\ref{e_e}) entails the six-dimensional integral over two QTAIM-basins. This endeavour is far from straightforward and it involves a computational effort which severely hampers the applicability of IQA for the study of electronic systems. Currently, the IQA can only be applied to systems with only a few tens of atoms. Indeed, the main bottleneck for the explotaition of the IQA approach is the calculation of the above mentioned integrals. **Ataque a la problematica**. Therefore new algorithms and software is needed for the amelioration of this situation. Such enhacement comprises the main contribution of this paper. **Julia**. More specifically, one must determine the QTAIM-basins prior to perform the integrals involved in equations(\ref{cinetica})--(\ref{e_e}). One way to do it is via the determination of the IAS of the whole system. For this purpose, onemust first find all the critical points of $\varrho(\mathbf{r})$ and second determine the stable manifolds of the BCP of the molecule or molecularcritical under investigation. We herein report a software which performs both tasks and that afterwards can be expanded for thecomputation of the integrals in formulae (\ref{cinetica})--(\ref{e_e})
+The IQA partition has been very useful in the investigation of a wide diversity of interactions in chemistry, e.g., covalent, polar, ionic, intermolecular interactions as well as chemical bonding in solid state systems. Despite the recognised utility of the IQA analysis, formulae (\ref{cinetica})--(\ref{omega}) imply that the IQA approach requires the integration of scalar fields over very irregular volume shapes. In particular expression (\ref{e_e}) entails the six-dimensional integral over two QTAIM-basins. This endeavour is far from straightforward and it involves a computational effort which severely hampers the applicability of IQA for the study of electronic systems. Currently, the IQA can only be applied to systems with only a few tens of atoms. Indeed, the main bottleneck for the explotaition of the IQA approach is the calculation of the above mentioned integrals. Therefore new algorithms and software is needed for the amelioration of this situation. More specifically, one must determine the QTAIM-basins prior to perform the integrals involved in equations(\ref{cinetica})--(\ref{e_e}). One way to do it is via the determination of the IAS of the whole system. For this purpose, one must first find all the critical points of $\varrho(\mathbf{r})$ and second determine the stable manifolds of the BCP of the molecule or molecular critical under investigation. Therefore new algorithms and software is needed for the amelioration of this situation.
+
+
+# High Performance and Expresiveness
+
+In a short period of time the programming language Julia~\cite{bezanson2012} has positioned itself as one of the most promising programming languages for scientific and high-performance computing. Among its most innovative features we can highlight: ease of use as a dynamic language with powerful features that make it very productive for writing code, and at the same time, the developed code runs fast, at least as fast as code written in statically typed languages~\cite{sengupta2019}. The use of this programming language in the area of numerical computation has increased in recent years, where we can identify linear algebra~\cite{olver2014}, computational geometry~\cite{bohm2016}, optimisation~\cite{udell2014}, linear programming, CFD~\cite{oz2021}, differential equations~\cite{chris2017}, economics~\cite{caraiani2019}, as well as various applications exploiting parallel computation~\cite{huo2021, suslov2020, huo2020} and high-performance architectures~\cite{hunold2020}.
+
+
+Such enhacement comprises the main contribution of this paper.
+
+# High Performance and Expresiveness
+
+**Ataque a la problematica**.
+
+We herein report a software which performs both tasks and that afterwards can be expanded for thecomputation of the integrals in formulae (\ref{cinetica})--(\ref{e_e})
+Such enhacement comprises the main contribution of this paper.
+
+
