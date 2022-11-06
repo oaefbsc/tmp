@@ -41,10 +41,9 @@ date: 5 November 2022
 Chemical bonding is one of the most fundamental concepts in chemistry.
 The most sound way to examine different sorts of chemical
 interactions under the same physical basis is arguably via the examination of
-quantum mechanical observables and their expectation values. The electron charge distribution, $\varrho(\mathbf{r})$, the pair density, $\varrho(\mathbf{r}_{1}, \mathbf{r}_{2})$ $\rho_2(r_1,
-r_2)$, kinetic and potentical energy densities and quantities derived from these functions, e.g., the localisation electron function, the reduced density gradient or the Non-Covalent Index are examples of the above mentionted Dirac observables. The analysis of the local and integrated values of these functions has resulted in the emerging of the field of theoretical computational chemistry known as *Quantum Chemical Topology* (QCT). The origins of QCT are based on the *Quantum Theory of Atoms in Molecules* (QTAIM) which provides a division of the three-dimensional space into basins which are related with the atoms of chemistry envisioned by Dalton at the beginning of the XIX century. These basins are illustrated for the purine molecule $C_{5}H_{4}N_{4}$) in Figure \ref{qtaim-purine}. The region comprising any of these basins equals the stable manifold of attractors of the trajectories of $\nabla $\varrho(\mathbf{r})$, which typically coincide with the position of the nuclei of the system. Such stable manifolds are displayed in black, magenta and blue for the carbon, hydrogen and nitrogen atoms of $C_5H_4N_4$ in Figure \ref{qtaim-purine}. We note that the complete space of purine is exhaustively divided in disjoint regions, the QTAIM-atoms, which are separated by the stable manifold of *Critical Bound Points* (BCP) of $\varrho(\mathbf{r})$ shown as small green spheres in Figure \ref{qtaim-purine}. Such separatrices are known as *Inter-Atomic Surfaces* (IAS).
+quantum mechanical observables and their expectation values. The electron charge distribution, $\varrho(\mathbf{r})$, the pair density, $\varrho(\mathbf{r}_{1}, \mathbf{r}_{2})$, kinetic and potentical energy densities and quantities derived from these functions, e.g., the localisation electron function, the reduced density gradient or the Non-Covalent Index are examples of the above mentionted Dirac observables. The analysis of the local and integrated values of these functions has resulted in the emerging of the field of theoretical computational chemistry known as *Quantum Chemical Topology* (QCT). The origins of QCT are based on the *Quantum Theory of Atoms in Molecules* (QTAIM) which provides a division of the three-dimensional space into basins which are related with the atoms of chemistry envisioned by Dalton at the beginning of the XIX century. These basins are illustrated for the purine molecule ($C_{5}H_{4}N_{4}$) in Figure \ref{qtaim-purine}. The region comprising any of these basins equals the stable manifold of attractors of the trajectories of $\nabla \varrho(\mathbf{r})$, which typically coincide with the position of the nuclei of the system. Such stable manifolds are displayed in black, magenta and blue for the carbon, hydrogen and nitrogen atoms of $C_5H_4N_4$ in Figure \ref{qtaim-purine}. We note that the complete space of purine is exhaustively divided in disjoint regions, the QTAIM-atoms, which are separated by the stable manifold of *Critical Bound Points* (BCP) of $\varrho(\mathbf{r})$ shown as small green spheres in Figure \ref{qtaim-purine}. Such separatrices are known as *Inter-Atomic Surfaces* (IAS).
 
-![Trajectories of $\nabla \rho(r)$ of purine computed with the MP2/cc-pVDZ approximation. The basins correspondingto the carbon, hydrogen and nitrogen atoms are shown in black, magenta and blue respectively. The bond and ring critical points ofthe system are displayed as green and red spheres respectively. \label{qtaim-purine}](purina.png){width=80%}
+![Trajectories of $\nabla \varrho(\mathbf{r})$ of purine computed with the MP2/cc-pVDZ approximation. The basins correspondingto the carbon, hydrogen and nitrogen atoms are shown in black, magenta and blue respectively. The bond and ring critical points ofthe system are displayed as green and red spheres respectively. \label{qtaim-purine}](purina.png){width=80%}
 
 Several tools of QCT take advantage of the partition of the 3D space defined by QTAIM, e.g., the *Interacting Quantum Atoms* (IQA) energy partition. The IQA approach has been exploited for the examination of many different types of chemical interactions. Given a partition of the 3D space, e.g., that provided by QTAIM, the IQA energy partition dissects the electronic energy in one-($E_{\mathrm{self}}^{\Omega_{\mathrm{A}}}$) and
 two-atom ($E_{\mathrm{int}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}$) contributions:
@@ -73,15 +72,16 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}
 \end{align} 
 
 \noindent wherein $Z_A$ is the nuclear charge within atom $\Omega_{\mathrm{A}}$ together with
+$\varrho(\mathbf{r})$
 
 \begin{align}
-T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{r_1^{\, \prime} =
-r_1} \omega_{\Omega_{\mathrm{A}}}(r_1) \nabla_1^2
-\rho_1(r_1;r_1^{\, \prime}) \mathrm{d}r_1,
+T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{\mathbf{r}_{1}^{\, \prime} =
+\mathbf{r}_{1}} \omega_{\Omega_{\mathrm{A}}}(\mathbf{r}_{1}) \nabla_1^2
+\varrho_{1}(\mathbf{r}_{1}; \mathbf{r}_{1}^{\, \prime}) \mathrm{d}\mathbf{r}_1,
 \label{cinetica} \\[1em]
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
-Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(r_1)
-\frac{\rho(r_1)}{r_{1\mathrm{B}}} \mathrm{d} r_1,
+Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(\mathbf{r}_{1})
+\frac{\varrho(\mathbf{r}_{1})}{\mathbf{r}_{1}\mathrm{B}}} \mathrm{d}\mathbf{r}_{1},
 \label{e_nucleo}  \\[1em]
 \end{align}
 
