@@ -51,6 +51,16 @@ The region comprising any of these basins equals the stable manifold of attracto
 Several tools of QCT take advantage of the partition of the 3D space defined by QTAIM, e.g., the *Interacting Quantum Atoms* (IQA) energy partition. The IQA approach has been exploited for the examination of many different types of chemical interactions. Given a partition of the 3D space, e.g., that provided by QTAIM, the IQA energy partition dissects the electronic energy in one-($E_{\mathrm{self}}^{\Omega_{\mathrm{A}}}$) and
 two-atom ($E_{\mathrm{int}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}$) contributions:
 
+\begin{equation} \label{div_iqa}
+E = \sum_{\Omega_{\mathrm{A}}}
+E_{\mathrm{self}}^{\Omega_{\mathrm{A}}} +
+\frac{1}{2} \sum_{\Omega_{\mathrm{A}} \neq \Omega_{\mathrm{B}}}
+E_{\mathrm{int}}^{\Omega_{\mathrm{A}}\Omega_
+{\mathrm{B}}}.
+\end{equation}
+
+\noindent The one- and two- atom contributions in expression (\ref{div_iqa}) can in turn be expressed as,
+
 
 You can also use plain \LaTeX for equations
 \begin{equation}\label{eq:fourier}
