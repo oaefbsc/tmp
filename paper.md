@@ -77,24 +77,24 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}
 \noindent wherein $Z_A$ is the nuclear charge within atom $\Omega_{\mathrm{A}}$ together with
 
 \begin{align}
-T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{\bm{r}_1^{\, \prime} =
-\bm{r}_1} \omega_{\Omega_{\mathrm{A}}}(\bm{r}_1) \nabla_1^2
-\varrho_1(\bm{r}_1;\bm{r}_1^{\, \prime}) \mathrm{d}\bm{r}_1,
+T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{r_1^{\, \prime} =
+r_1} \omega_{\Omega_{\mathrm{A}}}(r_1) \nabla_1^2
+\rho_1(r_1;r_1^{\, \prime}) \mathrm{d}r_1,
 \label{cinetica} \\[1em]
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
-Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(\bm{r}_1)
-\frac{\varrho(\bm{r}_1)}{r_{1\mathrm{B}}} \mathrm{d} \bm{r}_1,
+Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(r_1)
+\frac{\rho(\r_1)}{r_{1\mathrm{B}}} \mathrm{d} r_1,
 \label{e_nucleo}  \\[1em]
 V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 \frac{2 - \delta_{\mathrm{AB}}}{2}
-\int \omega_{\Omega_{\mathrm{A}}}(\bm{r}_1)
- \omega_{\Omega_{\mathrm{B}}}(\bm{r}_2)
-\frac{\varrho_2(\bm{r}_1,\bm{r}_2)}{r_{12}} \mathrm{d}\bm{r}_1
-\mathrm{d}\bm{r}_2, \ \mathrm{and} \label{e_e}  \\[1em]
-\omega_{\Omega_\mathrm{A}}(\bm{r}) & = \left\{
+\int \omega_{\Omega_{\mathrm{A}}}(r_1)
+ \omega_{\Omega_{\mathrm{B}}}(r_2)
+\frac{\rho_2(r_1,r_2)}{r_{12}} \mathrm{d}\r_1
+\mathrm{d}\r_2, \ \mathrm{and} \label{e_e}  \\[1em]
+\omega_{\Omega_\mathrm{A}}(r) & = \left\{
 \begin{array}{l}
-1 \ \mbox{if} \ \bm{r} \in \Omega_\mathrm{A}. \\
-0 \ \mbox{if} \ \bm{r} \notin \Omega_\mathrm{A}. \label{omega} \\
+1 \ \mbox{if} \ r \in \Omega_\mathrm{A}. \\
+0 \ \mbox{if} \ r \notin \Omega_\mathrm{A}. \label{omega} \\
 \end{array}
  \right.
 \end{align}
