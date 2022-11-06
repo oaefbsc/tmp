@@ -76,13 +76,30 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}
 
 \noindent wherein $Z_A$ is the nuclear charge within atom $\Omega_{\mathrm{A}}$ together with
 
+\begin{align}
+T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{\bm{r}_1^{\, \prime} =
+\bm{r}_1} \omega_{\Omega_{\mathrm{A}}}(\bm{r}_1) \nabla_1^2
+\varrho_1(\bm{r}_1;\bm{r}_1^{\, \prime}) \mathrm{d}\bm{r}_1,
+\label{cinetica} \\[1em]
+V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
+Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(\bm{r}_1)
+\frac{\varrho(\bm{r}_1)}{r_{1\mathrm{B}}} \mathrm{d} \bm{r}_1,
+\label{e_nucleo}  \\[1em]
+V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
+\frac{2 - \delta_{\mathrm{AB}}}{2}
+\int \omega_{\Omega_{\mathrm{A}}}(\bm{r}_1)
+ \omega_{\Omega_{\mathrm{B}}}(\bm{r}_2)
+\frac{\varrho_2(\bm{r}_1,\bm{r}_2)}{r_{12}} \mathrm{d}\bm{r}_1
+\mathrm{d}\bm{r}_2, \ \mathrm{and} \label{e_e}  \\[1em]
+\omega_{\Omega_\mathrm{A}}(\bm{r}) & = \left\{
+\begin{array}{l}
+1 \ \mbox{if} \ \bm{r} \in \Omega_\mathrm{A}. \\
+0 \ \mbox{if} \ \bm{r} \notin \Omega_\mathrm{A}. \label{omega} \\
+\end{array}
+ \right.
+\end{align}
 
-
-
-
-
-
-
+\noindent The function $\rho_1(r_1;r_1^{\prime})$ is the first-order reduced density matrix and $\delta_{\mathrm{AB}}$ is the Kronecker delta. The terms in equations (\ref{e_neta}) and (\ref{e_inter}) are easily interpretable. The quantity $T^{\Omega_{\mathrm{A}}}$ is the kinetic energy due to basin $\Omega_{\mathrm{A}}$ and $V_{\mathrm{e\tau}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}$ is the contribution to the potential energy due to (i) the electrons in basin $\Omega_{\mathrm{A}}$ and (ii) $\tau$, either electrons $\tau =\mathrm{e}$ or the nucleus $\tau = \mathrm{n}$, in basin $\Omega_{\mathrm{B}}$. Indeed, the Coulombic nature of the electronic Hamiltonian and theQTAIM partition, allows the electronic energy to be divided as put forward in equation (\ref{div_iqa}). 
 
 
 
