@@ -100,7 +100,8 @@ V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
 \omega_{\Omega_\mathrm{A}}(r) & = \left\{
 \begin{array}{l}
 1 \ \mbox{if} \ \mathbf{r} \in \Omega_\mathrm{A}. \\
-0 \ \mbox{if} \ \mathbf{r} \notin \Omega_\mathrm{A}. \label{omega} \\
+0 \ \mbox{if} \ \mathbf{r} \notin \Omega_\mathrm{A}. 
+\label{omega}
 \end{array}
  \right.
 \end{align}
