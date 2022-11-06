@@ -81,7 +81,7 @@ T^{\Omega_{\mathrm{A}}} & = -\frac{1}{2} \int_{\mathbf{r}_{1}^{\, \prime} =
 \label{cinetica} \\[1em]
 V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & = -
 Z_\mathrm{B} \int \omega_{\Omega_{\mathrm{A}}}(\mathbf{r}_{1})
-\frac{\varrho(\mathbf{r}_{1})}{\mathbf{r}_{1}\mathrm{B}}} \mathrm{d}\mathbf{r}_{1},
+\frac{\varrho(\mathbf{r}_{1})}{\mathbf{r}_{1}\mathrm{B}} \mathrm{d}\mathbf{r}_{1},
 \label{e_nucleo}  \\[1em]
 \end{align}
 
