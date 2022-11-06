@@ -61,6 +61,32 @@ E_{\mathrm{int}}^{\Omega_{\mathrm{A}}\Omega_
 
 \noindent The one- and two- atom contributions in expression (\ref{div_iqa}) can in turn be expressed as,
 
+\begin{align} 
+E_{\mathrm{self}}^{\Omega_{\mathrm{A}}} & = 
+T^{\Omega_{\mathrm{A}}} + 
+V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{A}}} +
+V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{A}}} \label{e_neta} \\
+E_{\mathrm{int}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} & =
+\frac{Z_{\mathrm{A}}Z_{\mathrm{B}}}{r_{\mathrm{AB}}} +
+V_{\mathrm{en}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}} +
+V_{\mathrm{en}}^{\Omega_{\mathrm{B}}\Omega_{\mathrm{A}}} +
+V_{\mathrm{ee}}^{\Omega_{\mathrm{A}}\Omega_{\mathrm{B}}}
+\label{e_inter}
+\end{align} 
+
+\noindent wherein $Z_A$ is the nuclear charge within atom $\Omega_{\mathrm{A}}$ together with
+
+
+
+
+
+
+
+
+
+
+
+
 
 You can also use plain \LaTeX for equations
 \begin{equation}\label{eq:fourier}
